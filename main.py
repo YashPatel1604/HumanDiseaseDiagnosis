@@ -1,13 +1,11 @@
 # Coding UI
 
-# Import Statements
 import streamlit as st
 from streamlit_option_menu import option_menu
 import PredictFunction
 import pyautogui
 import os
-# key1 = "ctrl"
-# key2 = "r"
+
 print()
 Search_text_array = []
 
@@ -48,6 +46,7 @@ if selected == Side_bar[1]:
     with col1:
         with col1:
             for i in range(0, 44):
+                #Search Bar commented
                 # if Search_text == Symptoms[i]:
                 #     Column1 = st.checkbox(Symptoms[i], key=Symptoms[i], value=True)
                 # else:
@@ -93,7 +92,6 @@ if selected == Side_bar[1]:
         line = '- Symptoms: ' + y + ' = ' + x
         f.write(line)
         f.write('\n')
-        # PrevHistory.update()
 
     if clearButton:
         pyautogui.hotkey('ctrl', 'r')
